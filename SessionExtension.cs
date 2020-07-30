@@ -13,7 +13,7 @@ namespace GeorgianComputers
     //Source: https://www.talkingdotnet.com/store-complex-objects-in-asp-net-core-session/
     public static class SessionExtension
     {
-        public static void SetObject(this ISession session, string key, object value)
+        public static void SetObject(this ISession session, string key, object value) 
         {
             session.SetString(key, JsonConvert.SerializeObject(value));
         }
